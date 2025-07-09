@@ -189,12 +189,12 @@ function gameInitialization(player1, player2) {
             const winnerObj = gameBoard.checkWinner();
             if (winnerObj.hasSomeoneWon) {
                 const winnerPlayer = parseSymbolToPlayer(winnerObj.winnerSymbol, player1, player2);
-                const message = `${winnerPlayer.getName()} Wins!`;
+                const message = `${winnerPlayer.getName()} a gagné !`;
                 displayController.showResultDialog(message);
                 res.gameEnded = true;
             }
             else if (winnerObj.tie) {
-                const message = `It's a Tie`;
+                const message = `Match Nul !`;
                 displayController.showResultDialog(message);
                 res.gameEnded = true;
             }
@@ -204,7 +204,7 @@ function gameInitialization(player1, player2) {
     
         const changePlayerTurn = () => {
             currentPlayer = currentPlayer === firstPlayer ? secondPlayer : firstPlayer;
-            const message = gameEnded ? 'Game End' : `${currentPlayer.getName()}'s Turn`;
+            const message = gameEnded ? 'Fin du jeu !' : `C'est à ${currentPlayer.getName()} de jouer`;
             displayController.changePlayerTurnTitle(message);
         }
     
