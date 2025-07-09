@@ -28,7 +28,7 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
     background-color: rgb(211, 162, 88);
     margin-bottom: 100px;
     user-select: none;
