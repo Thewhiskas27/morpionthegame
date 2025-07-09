@@ -29,7 +29,8 @@ html {
 
 body {
     font-family: Tahoma, "Trebuchet MS", sans-serif;
-    background-color: rgb(211, 162, 88);
+    background: #7FE0CA;
+    background: linear-gradient(90deg,rgba(127, 224, 202, 1) 0%, rgba(98, 189, 130, 1) 100%);
     margin-bottom: 100px;
     user-select: none;
 }
